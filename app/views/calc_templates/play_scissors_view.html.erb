@@ -1,7 +1,41 @@
-<h1>We played scissors!</h1>
-<h1>
-  They played <%= @computer_move %>!
-</h1>
-<h1>
-  We <%= @result %>.
-</h1>
+<div class="row">
+  <div class="col-sm-6 mb-3">
+<div class="card border-success">
+<div class="card-body text-success text-center">
+<h2 class="card-title">We played scissors!</h2>
+<p class="card-text">
+  <i class="far fa-hand-scissors fa-10x"></i>
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 mb-3">
+<div class="card border-danger">
+<div class="card-body text-danger text-center">
+<h2 class="card-title">They played <%= @computer_move %>!</h2>
+<p class="card-text">
+  <i class="far fa-hand-<%= @computer_move %> fa-10x"></i>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="alert alert-dismissible alert-<%= @boxcolor %>">
+<h2 class="text-center display-3">
+  We <%= @result %>!
+</h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="text-center">
+<a href="/">
+  Rules
+</a>
+</div>
+</div>
+</div>
+</div>

@@ -26,9 +26,29 @@
   </head>
 
   <body>
-    <a href="/rock">Play Rock</a>
-    <a href="/paper">Play Paper</a>
-    <a href="/scissors">Play Scissors</a>
+    <div class="container pt-5">
+    <div class="row mb-3">
+      <div class="col-lg-4">  <a href="rock" class="btn btn-outline-info btn-block">
+    <i class="far fa-hand-rock fa-fw"></i>
+
+    Play Rock
+  </a></div>
+    <div class="col-lg-4">
+  <a href="paper" class="btn btn-outline-info btn-block">
+    <i class="far fa-hand-paper fa-fw"></i>
+
+    Play Paper
+  </a>
+</div>
+<div class="col-lg-4">
+  <a href="scissors" class="btn btn-outline-info btn-block">
+    <i class="far fa-hand-scissors fa-fw"></i>
+
+    Play Scissors
+  </a>
+  </div>
+  </div>
+
 
     <%= yield %>
 
